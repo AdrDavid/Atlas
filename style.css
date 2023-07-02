@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(43, 43, 43);
+}
+
+
+
+
+
+.container{
+    z-index: 0;
+    position: relative;
+    top: 110px;
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+}
+
+
+
+
+img{
+    width: 100%;
+    height: 110px;
+}
+.cont{
+    overflow: hidden;
+    width: 200px;
+    height: 160px;
+    cursor: pointer;
+    transition: 0s;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.cont:hover{
+    width: 215px;
+    height: 165px;
+    margin-left: -7.5px;
+    margin-bottom: -15px;
+    margin-right: -7.5px;
+}
+
+
+
+
+.aumenta{
+    cursor: auto;
+    background-color: rgb(241, 241, 241);
+    position: fixed;
+    width: 60% !important;
+    height: 300px !important;
+    transition: 0.5s;
+    margin-left: -7.5px;
+    margin-top: 100px;
+    margin-bottom: -15px;
+    margin-right: -7.5px;
+}
+
+.inform{
+    font-size: 20px;
+    position: absolute;
+    min-height: 230px;
+    top: 30px;
+    right: 0;
+    width: 49.5%;
+}
+
+.resBandeira{
+    width: 49.5%;
+    height: 230px;
+}
+
+.escondeInform{
+    display: none;
+}
+
+.nomeDoPais{
+    text-align: center;
+    padding: 0;
+    height: 30px;
+    background-color: aliceblue;
+}
+.fechar{
+    cursor: pointer;
+    width: 27px;
+    height: 27px;
+    background-color: black;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* /////////////////////////////////// */
+
+
+.header{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(61, 61, 61);
+}
+
+.atlas{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    width: 400px;
+    margin-left: 15%;
+    background-color: black;
+}
+
+.filtros{
+    right: 15%;
+    display: flex;
+    position: absolute;
+    list-style: none;
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.menu-filtro .filtro-continente.ativo {
+    background-color: #eeeeeec5;
+    font-weight: bold;
+    cursor: pointer;
+
+  }
+
+  .menu-filtro > li{
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .menu-filtro > li:hover{
+    background-color: #d3d3d323;
+  }
+
+  .menu-filtro{
+    color: white;
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    right: 15%;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .menu-filtro > li > a{
+    color: white;
+    font-size: 20px;
+   text-decoration: none;
+    list-style: none;
+  }
+
+
+  footer{
+    z-index: 0;
+    position: relative;
+    margin-top: 130px;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    background-color: rgb(37, 37, 37);
+  }
+
+
+
+  .up{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    position: fixed;
+    right: 50px;
+    bottom: 200px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
+@media screen and (max-width: 700px) {
+    body{
+        background-color: rebeccapurple;
+    }
+
+    .header{
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(61, 61, 61);
+    }
+    
+    .atlas{
+        padding: 10px;
+        text-align: center;
+        color: white;
+        width: 100%;
+        margin-left: 0;
+        background-color: black;
+    }
+    
+    .filtros{
+        right: 15%;
+        display: flex;
+        position: absolute;
+        list-style: none;
+        gap: 20px;
+        color: white;
+        cursor: pointer;
+    }
+    
+    
+    .menu-filtro .filtro-continente.ativo {
+        background-color: #eeeeeec5;
+        font-weight: bold;
+        cursor: pointer;
+    
+      }
+    
+      .menu-filtro > li{
+        padding: 5px;
+        border-radius: 8px;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    
+      .menu-filtro > li:hover{
+        background-color: #d3d3d323;
+      }
+    
+      .menu-filtro{
+        color: white;
+        font-size: 20px;
+        display: flex;
+        position: absolute;
+        right: 15%;
+        gap: 20px;
+        list-style: none;
+      }
+    
+      .menu-filtro > li > a{
+        color: white;
+        font-size: 20px;
+       text-decoration: none;
+        list-style: none;
+      }
+
+}
